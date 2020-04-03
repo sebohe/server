@@ -242,7 +242,7 @@ func New(cfg *config.Config) (*Server, error) {
 	} else {
 		s.log.Warningf("AEZv5 implementation IS NOT hardware accelerated.")
 	}
-	s.log.Noticef("Server identifier is: '%v'", s.cfg.Server.Identifier)
+	s.log.Noticef("SEBASTIAN Server identifier is: '%v'", s.cfg.Server.Identifier)
 
 	// Initialize the server identity and link keys.
 	var err error
