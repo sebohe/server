@@ -123,8 +123,9 @@ func (p *pki) StartWorker() {
 
 func (p *pki) worker() {
 
-	const initialSpawnDelay = 5 * time.Second
+	p.log.Debugf("SEBASTIAN")
 
+	const initialSpawnDelay = 5 * time.Second
 	timer := time.NewTimer(initialSpawnDelay)
 	defer func() {
 		p.log.Debugf("Halting PKI worker.")
