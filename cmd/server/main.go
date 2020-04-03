@@ -55,6 +55,8 @@ func main() {
 		cfg.Debug.GenerateOnly = true
 	}
 
+	broken code
+
 	// Setup the signal handling.
 	haltCh := make(chan os.Signal)
 	signal.Notify(haltCh, os.Interrupt, syscall.SIGTERM)
