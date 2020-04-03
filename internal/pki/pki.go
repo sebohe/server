@@ -760,6 +760,7 @@ func init() {
 	prometheus.MustRegister(fetchedPKIDocsDuration)
 	prometheus.MustRegister(failedFetchPKIDocs)
 
+	fmt.Printf("Warped EPOCH: %s\n", WarpedEpoch)
 	if WarpedEpoch == "true" {
 		recheckInterval = 20 * time.Second
 	}
