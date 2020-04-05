@@ -46,6 +46,8 @@ func main() {
 		}
 	}
 
+	fmt.Println("SEBASTIAN")
+
 	cfg, err := config.LoadFile(*cfgFile)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Failed to load config file '%v': %v\n", *cfgFile, err)
