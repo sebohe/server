@@ -36,4 +36,5 @@ COPY --from=builder /go/server_plugins/cbor_plugins/echo-go/echo_server /go/bin/
 VOLUME /conf
 
 # This form of ENTRYPOINT allows the process to catch signals from the `docker stop` command
+RUN ls -Rla /go
 ENTRYPOINT /go/bin/server -f /conf/katzenpost.toml
